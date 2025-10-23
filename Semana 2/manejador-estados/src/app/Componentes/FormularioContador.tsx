@@ -6,7 +6,9 @@ export default function FormularioContador() {
     const [texto, setTexto] = useState<string>('');
 
     const [contadorLetras, setContadorLetras]= useState<number>(0);
-    
+
+    const [color,setColorTexto]=useState<string>('');
+
 
 
     //escucha cuando el componente ha sido cargado
@@ -23,6 +25,15 @@ export default function FormularioContador() {
     useEffect(()=>{
 
         setContadorLetras(texto.length);
+
+        if(contadorLetras<10)
+            setColorTexto('yellow')
+        else if(contadorLetras>10 && contadorLetras<50)
+            setColorTexto('green')
+        else 
+            setColorTexto('red')
+
+        
 
         //llama el api de busqueda
         //llama otro componente
@@ -45,6 +56,7 @@ export default function FormularioContador() {
             <textarea name="" id="" className='form-control' rows={10} cols={10} placeholder='ingresar texto'
                 value={texto}
                 onChange={manejarTexto}
+                style={{color}}
 
             >
 
