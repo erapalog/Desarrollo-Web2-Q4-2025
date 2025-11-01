@@ -7,12 +7,12 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   return (
+    
     <div>
 
       <ProviderProducto>
         <NavBar></NavBar>
         {children}
-
       </ProviderProducto>
 
     </div>

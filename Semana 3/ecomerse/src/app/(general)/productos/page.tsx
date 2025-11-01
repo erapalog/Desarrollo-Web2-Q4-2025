@@ -2,35 +2,23 @@
 import React from 'react'
 import NavBar from '../../Componentes/NavBar'
 import { useContextCarrito } from '../../Providers/ProviderProducto'
+import Producto from '../../Componentes/Producto'
+import BtnAgregar from '../../Componentes/BtnAgregar'
 
 export default function page() {
 
-  const { producto } = useContextCarrito()
+  const { producto ,agregarCarrito} = useContextCarrito()
   return (
 
     <div className='container'>
       <div className='row'>
-
-
-        {
-          producto.map((item) => (
-
-            <div className='col-md-3' key={item.id}>
-
-              <div className='card' >
-                <div className='card-header'>
-                  {item.nombreProducto}
-                </div>
-                <div className='card-body'>
-                  Precio Producto: {item.precioProducto} <br />
-                  ISV: {item.isvProducto}
-
-
-                </div>
-              </div>
-            </div>
-
-
+        { 
+          producto.map((item) => (           
+            <div className="col-md-3">
+             <Producto producto={item} key={item.id}></Producto>
+             <BtnAgregar producto={item}></BtnAgregar>
+             </div>
+          
           ))
         }
       </div>

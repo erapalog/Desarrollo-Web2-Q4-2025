@@ -19,21 +19,21 @@ export default function ProviderProducto({ children }: PlantillaReact) {
             id: 1,
             nombreProducto: 'papas',
             precioProducto: 12,
-            imgProducto: '',
+            imgProducto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFqJyT98TrPBRiksdF20tM_5SL3ywrHe4syA&s',
             isvProducto: 5
         },
         {
             id: 2,
             nombreProducto: 'cebollas',
             precioProducto: 15,
-            imgProducto: '',
+            imgProducto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNPypxMBKu5GdJqM-dhnQKrfBv-YUw8j-Eqg&s',
             isvProducto: 5
         },
         {
             id: 3,
             nombreProducto: 'zanahorias',
             precioProducto: 19,
-            imgProducto: '',
+            imgProducto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdO75zylM25fMkmYvC-9FXz2GX44oEBaL-5A&s',
             isvProducto: 5
         }];
 
