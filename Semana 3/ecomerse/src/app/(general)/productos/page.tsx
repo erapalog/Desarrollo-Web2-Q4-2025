@@ -14,8 +14,8 @@ export default function page() {
       <div className='row'>
         { 
           producto.map((item) => (           
-            <div className="col-md-3">
-             <Producto producto={item} key={item.id}></Producto>
+            <div className="col-md-3" key={item.id}>
+             <Producto producto={item} ></Producto>
              <BtnAgregar producto={item}></BtnAgregar>
              </div>
           
