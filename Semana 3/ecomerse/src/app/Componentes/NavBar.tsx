@@ -23,6 +23,7 @@ export default function NavBar() {
                                 Carrito
                                 <button type='button' className='btn btn-warning btn-sm'><span className='badge badge-secondary'>{productosCarrito.length}</span></button> 
                             </Link>
+                             <Link className="nav-link" href='/mantenimiento-producto'>Mantenimiento Producto</Link>
                             <Link className="nav-link" href='./'>Cerrar Sesion</Link>
                         </div>
                 </div>
