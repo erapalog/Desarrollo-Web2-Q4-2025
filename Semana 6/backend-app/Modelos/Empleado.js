@@ -2,7 +2,7 @@ const { DataTypes } = require("sequelize");
 const sequelize = require("../conexion/database");
 
 const Empleado = sequelize.define(
-  "empleado",
+  "employees",
   {
     EMPLOYEE_ID: {
       type: DataTypes.INTEGER,
@@ -42,7 +42,7 @@ const Empleado = sequelize.define(
     },
   },
   {
-    tableName: "empleado",
+    tableName: "employees",
     timestamps: false,
   }
 );

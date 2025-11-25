@@ -1,8 +1,8 @@
 const {Sequelize}= require('sequelize')
 
 const sequelize= new Sequelize(
-    'empleados',
-    'admin123',
+    'segundoparcial',
+    'root',
     'admin123',
     {
         host:'localhost',
